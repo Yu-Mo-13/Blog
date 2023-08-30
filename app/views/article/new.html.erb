@@ -1,0 +1,14 @@
+<div class="main">
+    <h1 class="page-title">新規投稿</h1>
+    <%= form_tag("/article/post") do %>
+        <div class="form-group">
+            <p>タイトル</p>
+            <%= text_field_tag(:title, nil, class: "form-control") %>
+        </div>
+        <div class="form-group">
+            <p>投稿内容</p>
+            <%= text_area_tag(:content, nil, class: "form-control") %>
+        </div>
+        <%= submit_tag("投稿", class: "btn btn-primary") %>
+    <% end %>
+</div>
