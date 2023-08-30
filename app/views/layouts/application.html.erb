@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Blog</title>
+    <title>m_yuya's monologue</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,15 @@
   </head>
 
   <body>
+    <div class="header">
+      <a href="/">m_yuya's monologue</a>
+      <img src=../assets/images/monologue.png>
+      <a>Link</a>
+      <a>Profile</a>
+    </div>
     <%= yield %>
+    <div class="footer">
+      <p>© 2023 m_yuya</p>
+    </div>
   </body>
 </html>
