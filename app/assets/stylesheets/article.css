@@ -1,0 +1,28 @@
+/* article common */
+body {
+  background-color: #b1d6ebc7;
+  color: #000;
+  font-size: 14px;
+  line-height: 1.42857143;
+}
+.header {
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer {
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* article/index.html.erb */
+.article-item {
+  margin-bottom: 20px;
+}
+
+.article-title a {
+  color: #000;
+  font-size: 30px;
+}

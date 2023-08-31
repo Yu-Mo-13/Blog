@@ -1,2 +1,8 @@
-<h1>Article#detail</h1>
-<p>Find me in app/views/article/detail.html.erb</p>
+<div class="main">
+    <div class="article-item">
+        <h2 class="article-title"><%= @article.title %></h2>
+        <p class="article-keyword">キーワード：<%= @article.keyword %></p>
+        <p class="article-timestamp">投稿日時：<%= @article.created_at %></p>
+        <p class="article-content"><%= @article.content %></p>
+    </div>
+</div>
