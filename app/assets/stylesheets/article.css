@@ -2,7 +2,6 @@
 body {
   background-color: #d6e5eec7;
   color: #000;
-  font-size: 14px;
   line-height: 1.42857143;
 }
 
@@ -11,29 +10,38 @@ body {
   margin-bottom: 20px;
   text-align: center;
   font-family: "Helvetica";
-  font-size: 20px;
+  font-size: 30px;
   color: #000;
   margin: 20px 0;
+  padding-left: 0px;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #000;
 }
 
 .head-img {
   width: 80px;
   height: 80px;
   object-fit: cover;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 20px;
+  margin-right: 70px;
   border-radius: 50%;
 }
 
 .title {
   color: #000;
   text-decoration: none;
+  padding-right: 35px;
 }
 
 .link {
   color: #000;
   text-decoration: none;
-  margin-left: 18px;
+  margin-left: 35px;
   margin-right: 18px;
 }
 
@@ -57,16 +65,44 @@ body {
 .article-item {
   margin-bottom: 20px;
   background-color: azure;
+  margin-top: 20px;
+  margin-left: 22%;
+  /* margin-left: 330px; */
+  margin-right: 22%;
+  padding-top: 5px;
+  padding-bottom: 25px;
+  font-family: "Noto Sans JP", sans-serif;
+  box-shadow: 4px 4px 0px 0px #ada9a9;
+  border-radius: 10px;
 }
 
 .article-title a {
   color: #000;
-  font-size: 30px;
+  font-size: 25px;
   text-decoration: none;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 .page-title {
   margin-bottom: 20px;
-  font-size: 30px;
+  font-size: 25px;
   margin-left: 20%;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.article-keyword {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-size: 18px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.article-timestamp {
+  margin-left: 20px;
+  margin-bottom: 0px;
+  font-size: 15px;
+  font-family: "Noto Sans JP", sans-serif;
+  width: 300px;
 }

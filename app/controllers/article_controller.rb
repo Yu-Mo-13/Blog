@@ -12,7 +12,7 @@ class ArticleController < ApplicationController
   end
 
   def post
-    @article = Article.new(content: params[:content], title: params[:title])
+    @article = Article.new(content: params[:content], title: params[:title], keyword: params[:keyword])
     if @article.save
       redirect_to("/")
     else

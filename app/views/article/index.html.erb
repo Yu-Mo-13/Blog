@@ -4,7 +4,7 @@
         <div class="article-item">
             <h2 class="article-title"><%= link_to(article.title, "/article/#{article.id}") %></h2>
             <p class="article-keyword">キーワード：<%= article.keyword %></p>
-            <p class="article-timestamp">投稿日時：<%= article.created_at %></p>
+            <p class="article-timestamp">投稿日時：<%= article.created_at.strftime("%Y/%m/%d") %></p>
         </div>
     <% end %>
 </div>
