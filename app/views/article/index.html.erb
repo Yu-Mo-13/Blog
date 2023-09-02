@@ -1,5 +1,7 @@
 <div class="main">
-    <h1 class="page-title">最近の投稿</h1>
+    <div class="page-title">
+        <h1>最近の投稿</h1>
+    </div>
     <% @articles.each do |article| %>
         <div class="article-item">
             <h2 class="article-title"><%= link_to(article.title, "/article/#{article.id}") %></h2>

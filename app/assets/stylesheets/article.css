@@ -66,14 +66,16 @@ hr {
   margin-bottom: 20px;
   background-color: azure;
   margin-top: 20px;
-  margin-left: 22%;
-  /* margin-left: 330px; */
-  margin-right: 22%;
   padding-top: 5px;
   padding-bottom: 25px;
   font-family: "Noto Sans JP", sans-serif;
   box-shadow: 4px 4px 0px 0px #ada9a9;
   border-radius: 10px;
+  width: 600px;
+  /* 画面の中心に固定する */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .article-title a {
@@ -85,11 +87,17 @@ hr {
   font-family: "Noto Sans JP", sans-serif;
 }
 
-.page-title {
+.page-title h1{
   margin-bottom: 20px;
+  margin-top: 20px;
+  padding-top: 5px;
   font-size: 25px;
-  margin-left: 20%;
   font-family: "Noto Sans JP", sans-serif;
+  width: 670px;
+  /* 画面の中心に固定する */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .article-keyword {
