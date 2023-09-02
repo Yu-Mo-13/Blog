@@ -2,7 +2,8 @@
     <div class="article-item">
         <h2 class="article-title"><%= @article.title %></h2>
         <p class="article-keyword">キーワード：<%= @article.keyword %></p>
-        <p class="article-timestamp">投稿日時：<%= @article.created_at %></p>
+        <p class="article-timestamp">投稿日時：<%= @article.created_at.strftime("%Y/%m/%d") %></p>
+        <hr>
         <p class="article-content"><%= @article.content %></p>
     </div>
 </div>
