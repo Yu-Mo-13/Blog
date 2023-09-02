@@ -1,28 +1,72 @@
 /* article common */
 body {
-  background-color: #b1d6ebc7;
+  background-color: #d6e5eec7;
   color: #000;
   font-size: 14px;
   line-height: 1.42857143;
 }
+
 .header {
   padding: 20px;
   margin-bottom: 20px;
   text-align: center;
+  font-family: "Helvetica";
+  font-size: 20px;
+  color: #000;
+  margin: 20px 0;
+}
+
+.head-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 50%;
+}
+
+.title {
+  color: #000;
+  text-decoration: none;
+}
+
+.link {
+  color: #000;
+  text-decoration: none;
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+.profile {
+  color: #000;
+  text-decoration: none;
+  margin-left: 18px;
+  margin-right: 18px;
 }
 
 .footer {
     padding: 20px;
     margin-top: 20px;
     text-align: center;
-}
+    font-family: "Helvetica";
+    font-size: 20px;
+    color: #000;
+  }
 
 /* article/index.html.erb */
 .article-item {
   margin-bottom: 20px;
+  background-color: azure;
 }
 
 .article-title a {
   color: #000;
   font-size: 30px;
+  text-decoration: none;
+}
+
+.page-title {
+  margin-bottom: 20px;
+  font-size: 30px;
+  margin-left: 20%;
 }

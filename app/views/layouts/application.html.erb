@@ -12,10 +12,10 @@
 
   <body>
     <div class="header">
-      <a href="/">m_yuya's monologue</a>
-      <img src=./assets/images/monologue.png>
-      <a>Link</a>
-      <a>Profile</a>
+      <a class="title" href="/">m_yuya's monologue</a>
+      <%= image_tag "monologue.png", class: "head-img" %>
+      <a class="link">Link</a>
+      <a class="profile">Profile</a>
     </div>
     <%= yield %>
     <div class="footer">
