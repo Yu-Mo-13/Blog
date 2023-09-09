@@ -63,7 +63,6 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
   
-  gem 'pg', '1.1'
 end
 
 group :test do
@@ -76,3 +75,4 @@ end
 gem 'net-imap'
 gem 'net-pop'
 gem 'net-smtp'
+gem 'pg'
