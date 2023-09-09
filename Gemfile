@@ -72,5 +72,5 @@ group :test do
 end
 
 gem 'net-imap'
-gem 'net-app'
+gem 'net-pop'
 gem 'net-smtp'
