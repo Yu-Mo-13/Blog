@@ -1,2 +1,14 @@
-<h1>Profiles#edit</h1>
-<p>Find me in app/views/profiles/edit.html.erb</p>
+<div class="main">
+    <div class="page-title">
+        <h1>プロフィール欄編集</h1>
+    </div>
+    <%= form_tag("/profiles/post") do %>
+        <div class="form-group">
+            <p>内容</p>
+            <%= text_area_tag(:title, @profile.content, class: "form-control") %>
+        </div>
+        <div class="form-group">
+            <%= submit_tag("適用", class: "btn btn-primary") %>
+        </div>
+    <% end %>
+</div>
