@@ -9,8 +9,8 @@ class ProfilesController < ApplicationController
   end
 
   def post
-    @profile = Profile.new(content: params[:content])
-    if @profile.save
+    @profile = Profile.find_by(id: 1)
+    if @profile.update(content: params[:content])
       redirect_to("/profiles/")
     else
       render("profiles/edit")
