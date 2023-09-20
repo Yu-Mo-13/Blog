@@ -1,6 +1,6 @@
 class SnslinksController < ApplicationController
   def index
-    @snslink = Snslink.all.order('created_at DESC')
+    @snslinks = Snslink.all.order('created_at DESC')
   end
 
   def edit
@@ -8,7 +8,12 @@ class SnslinksController < ApplicationController
   end
 
   def post
-    @snslink = Snslink.new(app: params[:app], link: params[link])
+    @snslink = Snslink.new(app: params[:app], account: params[:account], url: params[:url])
+    if @snslink.save
+      redirect_to("/snslinks/")
+    else
+      render("snslinks/new")
+    end
   end
 
   def detail
