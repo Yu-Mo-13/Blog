@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_09_19_140048) do
+ActiveRecord::Schema[7.0].define(version: 2023_09_20_115448) do
   create_table "articles", force: :cascade do |t|
     t.string "title"
     t.string "keyword"
@@ -28,10 +28,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_19_140048) do
 
   create_table "snslinks", force: :cascade do |t|
     t.string "app"
-    t.string "link"
     t.string "string"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "url"
+    t.string "account"
   end
 
 end

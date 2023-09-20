@@ -11,16 +11,26 @@ class SnslinksController < ApplicationController
     @snslink = Snslink.new(app: params[:app], link: params[link])
   end
 
+  def detail
+    @snslink = Snslink.find_by(id: params[:id])
+  end
+
   def new
     @snslink = Snslink.new()
   end
 
-  def update
+  # def update
+  #   @snslink = Snslink.find_by(id: params[:id])
+  #   if @snslink.update(app: params[:app], link: params[link])
+  #     redirect_to("/snslinks/")
+  #   else
+  #     render("snslinks/edit")
+  #   end
+  # end
+
+  def delete
     @snslink = Snslink.find_by(id: params[:id])
-    if @snslink.update(app: params[:app], link: params[link])
-      redirect_to("/snslinks/")
-    else
-      render("snslinks/edit")
-    end
+    @snslink.destroy
+    redirect_to("/snslinks/")
   end
 end
