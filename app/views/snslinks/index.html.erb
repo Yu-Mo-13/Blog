@@ -2,11 +2,11 @@
     <div class="page-title">
         <h1>SNS等リンク</h1>
     </div>
-    <div class="article-item">
-        <table border="1">
+    <div class="snslink-item">
+        <table>
             <% @snslinks.each do |snslink| %>
                 <tr>
-                    <td>・<%= snslink.app %></td>
+                    <td><%= snslink.app %></td>
                     <td><%= link_to(snslink.account, snslink.url)%></td>
                     <td><%= link_to("詳細", "/snslinks/#{snslink.id}/detail") %></td>
                 </tr>

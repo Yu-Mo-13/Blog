@@ -200,3 +200,43 @@ hr {
   white-space: pre-wrap;
   line-height: 2.5;
 }
+
+/* snslink/index.html.erb */
+.snslink-item {
+  margin-bottom: 20px;
+  background-color: azure;
+  margin-top: 20px;
+  padding-top: 5px;
+  padding-bottom: 25px;
+  font-family: "Noto Sans JP", sans-serif;
+  box-shadow: 4px 4px 0px 0px #ada9a9;
+  border-radius: 10px;
+  width: 600px;
+  /* 画面の中心に固定する */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.snslink-item table {
+  margin-top: 20px;
+}
+.snslink-item tr {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 18px;
+  font-family: "Noto Sans JP", sans-serif;
+  white-space: pre-wrap;
+}
+
+.snslink-item td {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 107px;
+  font-size: 22px;
+  font-family: "Noto Sans JP", sans-serif;
+  white-space: pre-wrap;
+  text-align: center;
+}
