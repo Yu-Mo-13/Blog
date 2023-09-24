@@ -1,0 +1,22 @@
+<div class="main">
+    <div class="page-title">
+        <h1>リンク追加</h1>
+    </div>
+    <%= form_tag("/snslinks/post") do %>
+        <div class="form-group">
+            <p>アプリ名</p>
+            <%= text_field_tag(:app, nil, class: "form-control") %>
+        </div>
+        <div class="form-group">
+            <p>アカウント名</p>
+            <%= text_field_tag(:account, nil, class: "form-control") %>
+        </div>
+        <div class="form-group">
+            <p>URL</p>
+            <%= text_field_tag(:url, nil, class: "form-control") %>
+        </div>
+        <div class="form-group">
+            <%= submit_tag("追加", class: "btn btn-primary") %>
+        </div>
+    <% end %>
+</div>

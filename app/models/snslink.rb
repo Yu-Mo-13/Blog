@@ -1,0 +1,2 @@
+class Snslink < ApplicationRecord
+end
